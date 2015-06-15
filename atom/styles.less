@@ -1,0 +1,29 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+atom-text-editor {
+
+}
+
+atom-text-editor .cursor {
+
+}
+
+// for `bracket-matcher` package
+atom-text-editor, atom-text-editor::shadow {
+  .bracket-matcher {
+    border-bottom-color: blue;
+    background-color: rgba(0, 104, 221, 0.33);
+  }
+}

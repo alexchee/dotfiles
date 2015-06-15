@@ -1,0 +1,46 @@
+# Your keymap
+#
+# Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
+# to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# '.editor':
+#   'enter': 'editor:newline'
+#
+# 'body':
+#   'ctrl-P': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+
+'body':
+  'cmd-T': 'symbols-view:toggle-file-symbols'
+'atom-text-editor':
+  'ctrl-alt-cmd-]': 'vertical-align:align'
+  'alt-space': 'autocomplete:toggle'
+  'cmd-l': 'go-to-line:toggle'
+'.platform-darwin':
+  'ctrl-cmd-r': 'tree-view:reveal-active-file'
+'.platform-darwin atom-text-editor':
+  'cmd-T': 'symbols-view:toggle-file-symbols'
+'.platform-win32':
+  'ctrl-alt-r': 'tree-view:reveal-active-file'
+'atom-text-workspace':
+  'alt': 'sublime-select:start'
+
+# aligner
+'.platform-darwin atom-text-editor':
+  'alt-cmd-/': 'aligner:align'
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'ctrl-alt-/': 'aligner:align'
+
+# block-selection-mode package
+'atom-text-editor.block-selection-mode':
+  'ctrl-k': 'block-selection-mode:prev-line'
+  'ctrl-l': 'block-selection-mode:next-line'
+  'ctrl-;': 'block-selection-mode:forward-char'
+  'ctrl-j': 'block-selection-mode:backward-char'
