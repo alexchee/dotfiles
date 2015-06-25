@@ -8,4 +8,4 @@ IRB.conf[:AUTO_INDENT] = true
 require 'irb/ext/save-history'
 IRB.conf[:USE_READLINE] = true
 IRB.conf[:SAVE_HISTORY] = 1000
-IRB.conf[:HISTORY_PATH] = File::expand_path("~/.irb.history")
+IRB.conf[:HISTORY_PATH] = "#{ENV['HOME']}/.irb_history"
